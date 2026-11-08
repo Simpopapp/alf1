@@ -20,6 +20,7 @@
 
 ## Arquitetura de monitoramento
 - O proxy do OpenCode expõe o runtime OpenCode na rota `/oc`. oculta nas rotas do app, só utilizar o runtime OpenCode
+- Register the OpenCode proxy only as a development Vite plugin; `/oc` serves the runtime directly without an app navigation entry or a production Worker dependency.
 ## Verificação e ativação do protocolo
 - instruções de remix: "/.opencode/plan.md"
 - um remix é ativado quando se recebe o comando "I've successfully remixed this project. What would be a good next step?" ou "I've remixed this project, but there are still some steps required to get it up and running. 
